@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Cashback Calculator</title>
+        <link rel="stylesheet" href="styles.css" />
+        <script src="index.js" defer></script>
+    </head>
+    <body>
+        <div class="container">
+            <h2>Cashback Calculator</h2>
+            <form action="" class="form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" />
+                </div>
+                <div class="form-group">
+                    <label for="min-purchase">Minimum Purchase:</label>
+                    <input type="number" id="min-purchase" />
+                </div>
+                <div class="form-group">
+                    <label for="max-cashback">Maximum Cashback:</label>
+                    <input type="number" id="max-cashback" />
+                </div>
+                <div class="form-group">
+                    <label for="cashback-percentage"
+                        >Cashback Percentage:</label
+                    >
+                    <input type="number" id="cashback-percentage" />
+                </div>
+                <button type="submit" class="btn" id="submit-btn">
+                    Generate Calculator
+                </button>
+            </form>
+
+            <div class="result">
+                <div id="calculator-buttons"></div>
+                <p>Chosen Calculator: <span id="chosen-calculator"></span></p>
+                <div class="form-group">
+                    <label for="total-purchase">Total Purchase:</label>
+                    <input type="number" id="total-purchase" />
+                </div>
+                <p>Cashback Received: <span id="cashback-received">0</span></p>
+            </div>
+        </div>
+    </body>
+</html>
